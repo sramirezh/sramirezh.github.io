@@ -1,85 +1,584 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@sramirezh 
+carlos-sanchez
+/
+carlos-sanchez.github.io
+1
+0
+0
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+carlos-sanchez.github.io/index.html
+
+Carlos Sánchez reorders projects
+Latest commit a8cb2dd on 12 Aug 2020
+ History
+ 2 contributors
+@carlos-sanchez@carlos-verold
+Executable File  562 lines (354 sloc)  28.2 KB
+  
 <!doctype html>
-<html lang="en">
+<html lang="en-EN">
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- allows zoom -->
-<!-- or -->
-<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"> <!-- blocks zoom -->
-<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-<title></title>
- 
-<meta name="description" content=""> <!-- should be under 155 characters -->
- 
+
+<title>Carlos Sánchez › Product Designer</title>
+
+<meta name="description" content="I am a Product Designer based in New York"/>
+<meta name="author" content="Carlos Sánchez"/>
+<meta name="keywords" content="product ux design new york ontruck"/>
+
 <!-- Mobile viewport optimization h5bp.com/ad -->
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- allows zoom -->
 
- 
 <!-- Mobile IE allows us to activate ClearType technology for smoothing fonts for easy reading -->
 <meta http-equiv="cleartype" content="on">
- 
 
 <link rel="shortcut icon" href="favicon.ico" />
-<link rel="icon" href="icon.png"/> 
- 
+<link rel="apple-touch-icon" href="icon.png"/>
+<link rel="icon" href="icon.png"/>
+
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+
+
 <!-- For Facebook -->
-<meta property="og:url" content="http://www.howbb8works.com"> <!-- Must match the data-href from the button -->
-<meta property="og:title" content="How Does BB-8 Work?"/>
+<meta property="og:title" content="Carlos Sánchez › Product Designer"/>
 <meta property="og:type" content="website"/>
-<meta property="og:description" content="We have used really cool web technology to demonstrate how BB-8 works.">
-<meta property="og:image" content="http://www.howbb8works.com/img/howbb8works.png"> <!-- Use images that are at least 1200 x 630 pixels for the best display on high resolution devices. At the minimum, you should use images that are 600 x 315 pixels to display link page posts with larger images. -->
-<!-- optional -->
-<meta property="og:site_name" content="How Does BB-8 Work?">
-<meta property="fb:app_id" content="437218729793191">
+<meta property="og:image" content="https://carlossanchez.me/carlos-sanchez-website.png"/>
+<meta property="og:url" content="https://carlossanchez.me"/>
+<meta property="og:site_name" content="Carlos Sánchez"/>
+<meta property="og:description" content="I am a Product Designer based in New York City"/>
 
 <!-- for Twitter -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@howbb8works">
-<meta name="twitter:creator" content="@chocotuits">
-<meta name="twitter:title" content="How Does BB-8 Work?">
-<meta name="twitter:description" content="We have used really cool web technology to demonstrate how BB-8 works.">
-<meta name="twitter:image" content="http://www.howbb8works.com/img/howbb8works.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Carlos Sánchez › Product Designer" />
+<meta name="twitter:description" content="I am a Product Designer based in New York" />
+<meta name="twitter:image" content="https://carlossanchez.me/carlos-sanchez-website.png" />
 
 <!-- For Google+ -->
 <!-- <html itemscope itemtype="http://schema.org/Article"> -->
-<meta itemprop="name" content="Title Goes Here">
-<meta itemprop="description" content="Description Goes Here">
-<meta itemprop="image" content="http://example.com/image.jpg">
+<meta itemprop="name" content="Carlos Sánchez › Product Designer">
+<meta itemprop="description" content="I am a Product Designer based in New York">
+<meta itemprop="image" content="https://carlossanchez.me/carlos-sanchez-website.png">
 
-<!-- Google -->
-<meta name="google" content="notranslate" />
 
-<!-- Apple -->
-<link rel="apple-touch-icon" href="icon.png"/>
-<link rel="apple-touch-icon-precomposed" href="favicons/apple-touch-icon-57x57-precomposed.png" sizes="57x57">
-<link rel="apple-touch-icon-precomposed" href="favicons/apple-touch-icon-76x76-precomposed.png" sizes="76x76">
-<link rel="apple-touch-icon-precomposed" href="favicons/apple-touch-icon-120x120-precomposed.png" sizes="120x120">
-<link rel="apple-touch-icon-precomposed" href="favicons/apple-touch-icon-152x152-precomposed.png" sizes="152x152">
- 
-<!-- Windows -->
-<meta http-equiv="MSThemeCompatible" content="no">
-<meta name="application-name" content="Verold">
-<meta name="msapplication-tooltip" content="3D Tools for the Web">
-<meta name="msapplication-TileColor" content="#000000">
-<meta name="msapplication-TileImage" content="favicons/windows8-tile-144x144.png">
-<meta name="msapplication-square70x70logo" content="favicons/windows8-tile-70x70.png">
-<meta name="msapplication-square150x150logo" content="favicons/windows8-tile-150x150.png">
-<meta name="msapplication-wide310x150logo" content="favicons/windows8-tile-310x150.png">
-<meta name="msapplication-square310x310logo" content="favicons/windows8-tile-310x310.png">
 
 <!--[if lt IE 9]>
-<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<!-- iOS web app, delete if not needed. https://github.com/h5bp/mobile-boilerplate/issues/94 -->
-<!-- 
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="">
--->
 
-<!-- The script prevents links from opening in mobile safari. https://gist.github.com/1042026 -->
-<!-- <script>(function(a,b,c){if(c in b&&b[c]){var d,e=a.location,f=/^(a|html)$/i;a.addEventListener("click",function(a){d=a.target;while(!f.test(d.nodeName))d=d.parentNode;"href"in d&&(d.href.indexOf("http")||~d.href.indexOf(e.host))&&(a.preventDefault(),e.href=d.href)},!1)}})(document,window.navigator,"standalone")</script> -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/scripts-min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-10359362-24"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-10359362-24');
+</script>
+
+
+
 
 </head>
+
+<body>
+
+  <div class="body-wrapper-bg" id="bodyWrapperBg"></div>
+
+  <div class="body-wrapper" name="top">
+
+  <div class="header-bg"></div>
+
+	<header class="header">
+
+		<div class="container">
+
+			<a class="logo" href="index.html">Carlos Sánchez</a>
+
+        <ul class="nav header__contact">
+          <li>
+            <a href="mailto:hi@carlossanchez.me" title="Send email to hi@carlossanchez.me">
+              <!-- iconmonstr.com -->
+              <span aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/></svg>
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.971l-11.986 9.713zm-5.425-1.822l-6.575-5.329v12.501l6.575-7.172zm10.85 0l6.575 7.172v-12.501l-6.575 5.329zm-1.557 1.261l-3.868 3.135-3.868-3.135-8.11 8.848h23.956l-8.11-8.848z"/></svg> -->
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/chocotuits" target="_blank" title="twitter">
+              <span aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/chocotuits" target="_blank" title="instagram">
+              <span aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://medium.com/@chocotuits" target="_blank" title="Medium">
+              <span aria-hidden="true">
+                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 1.837v.403h-9.412v-.403l1.939-1.882c.19-.19.19-.246.19-.537v-10.91l-5.389 13.688h-.728l-6.275-13.688v9.174c-.052.385.076.774.347 1.052l2.521 3.058v.404h-7.148v-.404l2.521-3.058c.27-.279.39-.67.325-1.052v-10.608z"/></svg>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/carlos-s%C3%A1nchez-garc%C3%ADa-9262a726/" target="_blank" title="linkedin">
+              <span aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </span>
+            </a>
+          </li>
+        </ul>
+
+				<h1 id="elevatorPitch" class="elevator-pitch">
+          <span>Hola.</span>
+          I am a Product Designer based in New York City. I have spent the last eight years solving real user problems and business needs through digital products at different startups in the US, Canada and Spain.
+          <!-- When I am not designing you will probably find me taking photos of <a href="night-sky.html" target="_blank">the night sky</a> -->
+        </h1>
+
+
+		</div><!-- /container -->
+	</header>
+
+
+  <div class="main-content">
+
+    <div class="tag-selector">
+      <div class="container">
+        <ul class="nav" id="navCategories">
+          <li class="selected" id="categoryAll">All</li>
+          <li id="categoryCaseStudies">Case Studies</li>
+          <li id="categoryPosts">Posts</li>
+          <li id="categorySideProjects">Side Projects</li>
+          <!-- <li id="categoryTalks">Talks</li> -->
+
+        </ul>
+      </div>
+    </div>
+
+
+    <ul class="project-list">
+
+
+      <li class="project-list__item project-list__item--gray-gradient-bg categorySideProjects">
+
+        <div class="col col--right col6 project-list__item__info">
+          <h2 class="project-list__item__info__title">How BB-8 Works</h2>
+          <ul class="project-list__item__info__tags">
+            <li>#side-project</li>
+          </ul>
+          <p>
+"There were a lot of discussions about how having a CG BB-8 would be so much easier, but we also knew it would be better for the film if it were performed" said director J.J. Abrams when the first trailer for <i>Star Wars Episode VII</i> came out. But how did they build it? Weirdly enough, the internet couldn't give me an answer, so a friend and I set out to figure it out ourselves. This site, published in May 2015, was the result of our investigation. It soon went viral, being featured on <a href="https://www.popsci.com/star-wars-fans-figure-out-force-awakens-new-robot" target="_blank">Popular Science</a>, <a href="http://time.com/4021837/star-wars-bb8-how/" target="_blank">Time Magazine</a> , <a href="https://twitter.com/chocotuits/status/677862618791563264" target="_blank">the BBC</a> and many other media outlets. Oh, and it was the side project of the summer for <a href="https://twitter.com/chocotuits/status/628434315823575040" target="_blank">Net Magazine</a>.
+        </p>
+          <a class="project-list__item__info__read-more" href="https://howbb8works.com" title="Read More" target="_blank">Visit<span aria-hidden="true"> &rarr;</span></a>
+        </div>
+
+        <div class="project-list__item__bg-img project-list__item__bg-img--left project-list__item__bg-img--bb8"></div>
+
+      </li>
+
+
+      <li class="project-list__item project-list__item--light-bg project-list__item--cubigram categorySideProjects">
+
+
+        <div class="col col--left col6 project-list__item__info">
+          <h2 class="project-list__item__info__title">Cubigram</h2>
+          <ul class="project-list__item__info__tags">
+            <li>#side-project</li>
+          </ul>
+          <p>
+            Cubigram is a word game for iOS that I created with two friends during the 2020 lockdown. It currently has +1K daily active users and +3K monthly active users.
+          </p>
+          <a href="https://cubigram.app" class="project-list__item__info__read-more" title="Visit" target="_blank">Visit<span aria-hidden="true"> &rarr;</span></a>
+        </div>
+
+        <div class="project-list__item__bg-img project-list__item__bg-img--right project-list__item__bg-img--cubigram"></div>
+
+
+
+      </li>
+
+
+
+      <li class="project-list__item project-list__item--gray-gradient-bg categoryCaseStudies">
+
+
+        <div class="col col--right col6 project-list__item__info">
+          <h2 class="project-list__item__info__title">Ontruck: Solving the Tricky Times Problem</h2>
+          <ul class="project-list__item__info__tags">
+            <li>#case-study</li>
+          </ul>
+          <p>
+            Ontruck is a service that allows companies with road freight shipping needs to easily book and track shipments online. One day our drivers started complaining that sometimes it was hard, or even impossible, to make it on time to all the stops in a job. We checked the data and found out that, in a significant percentage of cases, our users were indeed requesting tricky pickup and dropoff times. Here is how we solved the problem.
+          </p>
+          <a href="ontruck-tricky-times-case-study.html" class="project-list__item__info__read-more" title="Read More">Read<span aria-hidden="true"> &rarr;</span></a>
+        </div>
+
+        <img class="project-list__item__inline-img project-list__item__inline-img--left" src="img/projects/ontruck-tricky-times.png">
+
+
+      </li>
+
+
+
+
+
+      <li class="project-list__item categoryCaseStudies">
+
+
+        <div class="col col--left col6 project-list__item__info">
+          <h2 class="project-list__item__info__title">Doctor 24: From MVP to Scheduled Calls</h2>
+          <ul class="project-list__item__info__tags">
+            <li>#case-study</li>
+          </ul>
+          <p>
+            Doctor24 was born as a service that allowed users to talk to doctors online. The initial idea was simple: log in and do a video call with one of our physicians. But talking to users we realized how important it was for them to be able to talk to a doctor they already trusted. At the same time, they loved the immediacy of pushing a button and connecting with a physician right away. When we started designing Scheduled Appointments, our main challenge was figuring out how to keep the best of both worlds.
+          </p>
+          <a href="doctor24-case-study.html" class="project-list__item__info__read-more" title="Read More">Read<span aria-hidden="true"> &rarr;</span></a>
+        </div>
+
+        <img class="project-list__item__inline-img project-list__item__inline-img--right" src="img/projects/doctor24.png">
+
+
+
+      </li>
+
+
+
+
+      <li class="project-list__item project-list__item--dark-bg project-list__item--post-hiring categoryPosts">
+
+
+        <div class="col col--right col6 project-list__item__info">
+          <h2 class="project-list__item__info__title">The reasons why we have changed the way we hire designers at Ontruck</h2>
+          <ul class="project-list__item__info__tags">
+            <li>#post</li>
+          </ul>
+          <p class="text-shadow">
+            Until recently, one of the steps of our design hiring process at Ontruck was a take-home exercise, but the more candidates went through the process, the more aware we were of the downsides of this approach.
+          </p>
+          <a href="https://nerds.ontruck.com/the-reasons-why-we-have-changed-the-way-we-hire-designers-at-ontruck-dc2516a26b2e" class="project-list__item__info__read-more" title="Read More" target="_blank">Read on Medium<span aria-hidden="true"> &rarr;</span></a>
+        </div>
+
+
+      </li>
+
+
+
+      <li class="project-list__item project-list__item--dark-bg project-list__item--post-communication categoryPosts">
+
+
+        <div class="col col--left col6 project-list__item__info">
+          <h2 class="project-list__item__info__title">The 10 rules that are helping us fix internal communications at Ontruck</h2>
+          <ul class="project-list__item__info__tags">
+            <li>#post</li>
+          </ul>
+          <p class="text-shadow">
+            Things have been moving fast at Ontruck for the past three years. We went from a team of 10 people sharing a small office to a team of 160 people distributed in four different countries. As it happens at most fast-growing organizations, we've been struggling to keep our internal communications effective. This is the approach we're following to fix the problem.
+          </p>
+          <a href="https://nerds.ontruck.com/the-10-rules-that-are-helping-us-fix-internal-communications-at-ontruck-74b7e1b73743" class="project-list__item__info__read-more" title="Read More" target="_blank">Read on Medium<span aria-hidden="true"> &rarr;</span></a>
+        </div>
+
+
+      </li>
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- <li class="project-list__item project-list__item--dark-bg project-list__item--night-sky categorySideProjects">
+        <div class="col col--left col6 project-list__item__info">
+          <h2 class="project-list__item__info__title">Night Sky</h2>
+          <ul class="project-list__item__info__tags">
+            <li>#side-project</li>
+          </ul>
+          <p class="text-shadow">
+            Shots of the cosmos from planet earth.
+          </p>
+          <a href="night-sky.html" class="project-list__item__info__read-more" title="Visit">Visit<span aria-hidden="true"> &rarr;</span></a>
+        </div>
+      </li> -->
+
+
+      <li class="project-list__item project-list__item--gray-gradient-bg project-list__item--guia-ny categorySideProjects">
+
+
+        <div class="col col--left col6 project-list__item__info">
+          <h2 class="project-list__item__info__title">NYC Photo Guide</h2>
+          <ul class="project-list__item__info__tags">
+            <li>#side-project</li>
+          </ul>
+          <p>
+            This travel guide with some of the best photos I have taken in NYC is coming out in late 2020. To validate the interest in this project, I prototyped a few pages of the guide I had in mind and posted <a href="https://twitter.com/chocotuits/status/1280728320087187457" target="_blank">this tweet</a>. I decided to go to market based on the engagement and the feedback I received. I signed a deal with a publishing company to launch the guide in physical format through a crowdfunding campaign. The  campaign achieved its €6.5K goal in less than 24 hours.
+          </p>
+          <a class="project-list__item__info__read-more" href="http://bit.ly/3gSA85A" title="Read More" target="_blank">Visit<span aria-hidden="true"> &rarr;</span></a>
+        </div>
+
+        <div class="project-list__item__bg-img project-list__item__bg-img--right project-list__item__bg-img--guia-ny"></div>
+
+      </li>
+
+
+      <li class="project-list__item project-list__item--dark-bg project-list__item--nes categorySideProjects">
+
+        <div class="col col--right col6 project-list__item__info">
+          <h2 class="project-list__item__info__title">NES Mini</h2>
+          <ul class="project-list__item__info__tags">
+            <li>#side-project</li>
+          </ul>
+          <p>Like "How BB-8 Works", this site is a side project that I built using the 3D editor that we developed at Verold, the Toronto-based startup where I worked until it was acquired by Box in 2015. Launched a few weeks before Nintendo released the NES Mini, the site is basically an enhanced post that tells the amazing story behind the original NES from 1985.</p>
+          <a class="project-list__item__info__read-more" href="https://nintendo-mini.github.io/" title="Read More" target="_blank">Visit<span aria-hidden="true"> &rarr;</span></a>
+        </div>
+
+        <div class="project-list__item__bg-img project-list__item__bg-img--left project-list__item__bg-img--nes"></div>
+        <div class="nes-grid flickering"></div>
+
+      </li>
+
+
+
+
+      <li class="project-list__item project-list__item--dark-bg project-list__item--bbl categorySideProjects">
+
+
+        <div class="col col--left col6 project-list__item__info">
+          <h2 class="project-list__item__info__title">Beach Boys Legacy</h2>
+          <ul class="project-list__item__info__tags">
+            <li>#side-project</li>
+          </ul>
+          <p>
+          Beach Boys Legacy is my frontend development playground. Why a site about The Beach Boys? Well, they are one of my favorite bands and their massive discography, which spans over five decades, couldn't be properly explored anywhere on the internet. Fully designed and developed by myself, this project allows me to keep my frontend skills up to date. It also got me some backstage passes for Beach Boys and Brian Wilson shows :)
+          </p>
+          <a class="project-list__item__info__read-more" href="https://beachboyslegacy.com" title="Read More" target="_blank">Visit<span aria-hidden="true"> &rarr;</span></a>
+        </div>
+
+        <div class="project-list__item__bg-img project-list__item__bg-img--right project-list__item__bg-img--screenshot project-list__item__bg-img--bbl"></div>
+
+      </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <!-- <li class="project-list__item project-list__item--gray-gradient-bg categorySideProjects">
+        <div class="col col--left col6 project-list__item__info">
+          <h2 class="project-list__item__info__title">Twitter threads about design and technology</h2>
+          <ul class="project-list__item__info__tags">
+            <li>#side-project</li>
+          </ul>
+          <p>A series of twitter threads in Spanish about design and technology.</p>
+          <ul class="bulleted-list">
+          	<li>The Ikea Effect</li>
+          	<li>The Tamagotchi</li>
+          	<li>Component Libraries and The Masters of the Universe</li>
+          	<li>The 7 Mistakes that Killed the Pono</li>
+          	<li>Mental Models</li>
+          	<li>Bugs and Patches</li>
+          	<li>User Testing</li>
+          	<li>Company Culture</li>
+            <li>Renfe's Website</li>
+          </ul>
+          <a class="project-list__item__info__read-more" href="twitter-threads.html" title="Read More">Read threads<span aria-hidden="true"> &rarr;</span></a>
+        </div>
+        <div class="project-list__item__bg-img project-list__item__bg-img--right project-list__item__bg-img--twitter-threads"></div>
+      </li> -->
+
+
+
+
+
+
+
+      <!-- <li class="project-list__item project-list__item--dark-bg project-list__item--ux-talk categoryTalks">
+        <div class="col col--left col6 project-list__item__info">
+          <h2 class="project-list__item__info__title">UX</h2>
+          <ul class="project-list__item__info__tags">
+            <li>#talk</li>
+          </ul>
+          <p class="text-shadow">
+This talk, which I have been giving at different acceleration programs for startups since 2015, tries to answer three questions: What is UX? Why should I care? Where do I get started? Using examples of entrepreneurs who deeply cared about their users despite not having formal training as designers, I try to convey the long-term importance of designing great user experiences.
+          </p>
+          <a class="project-list__item__info__read-more" href="mailto:hi@carlossanchez.me" title="Read More">Book this talk<span aria-hidden="true"> &rarr;</span></a>
+        </div>
+      </li>
+      <li class="project-list__item project-list__item--dark-bg project-list__item--validation-talk categoryTalks">
+        <div class="col col--right col6 project-list__item__info">
+          <h2 class="project-list__item__info__title">Validating big ideas with small solutions</h2>
+          <ul class="project-list__item__info__tags">
+            <li>#talk</li>
+          </ul>
+          <p class="text-shadow">There is only one thing more dangerous than solving a problem wrong: solving the wrong problem. When resources are limited and one of our main goals is helping our business grow and scale, we must make sure that we are choosing the problems that are truly worth solving. In this talk we leave our intuition aside and we start looking for ways to validate our hypothesis with lean solutions. Then we explore how to to spread this mindset throughout other teams in our company.</p>
+          <a class="project-list__item__info__read-more" href="mailto:hi@carlossanchez.me" title="Read More">Book this talk<span aria-hidden="true"> &rarr;</span></a>
+        </div>
+      </li>
+      <li class="project-list__item project-list__item--dark-bg project-list__item--product-process categoryTalks">
+        <div class="col col--left col6 project-list__item__info">
+          <h2 class="project-list__item__info__title">The Product Design Process at Ontruck</h2>
+          <ul class="project-list__item__info__tags">
+            <li>#talk</li>
+          </ul>
+          <p class="text-shadow">
+While most startups have feature-based roadmaps, at Ontruck we work with problem-based roadmaps. Why? We don't build features for the sake of it. Only after we have fully understood the problems we aim to solve, we start thinking about solutions. In this talk we share how we do research, how we avoid falling in love with our solutions and how we prototype and test everything we design before we start building.
+          </p>
+          <a class="project-list__item__info__read-more" href="mailto:hi@carlossanchez.me" title="Read More">Book this talk<span aria-hidden="true"> &rarr;</span></a>
+        </div>
+      </li>
+ -->
+
+
+
+
+
+
+
+
+
+
+    </ul><!-- /project list -->
+
+
+  </div><!-- /main-content -->
+
+
+
+	<footer class="footer">
+
+
+		<div class="container">
+
+      <ul class="nav footer__contact pull-left">
+        <li class="getintouch-label">Get in touch</li>
+        <li>
+          <a href="mailto:hi@carlossanchez.me" title="Send email to hi@carlossanchez.me">
+            hi@carlossanchez.me
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/chocotuits" target="_blank" title="twitter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/chocotuits" target="_blank" title="instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://medium.com/@chocotuits" target="_blank" title="Medium">
+            <span aria-hidden="true">
+              <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M2.846 6.887c.03-.295-.083-.586-.303-.784l-2.24-2.7v-.403h6.958l5.378 11.795 4.728-11.795h6.633v.403l-1.916 1.837c-.165.126-.247.333-.213.538v13.498c-.034.204.048.411.213.537l1.871 1.837v.403h-9.412v-.403l1.939-1.882c.19-.19.19-.246.19-.537v-10.91l-5.389 13.688h-.728l-6.275-13.688v9.174c-.052.385.076.774.347 1.052l2.521 3.058v.404h-7.148v-.404l2.521-3.058c.27-.279.39-.67.325-1.052v-10.608z"/></svg>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/carlos-s%C3%A1nchez-garc%C3%ADa-9262a726/" target="_blank" title="linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+        </li>
+      </ul>
+
+
+
+
+		</div><!-- /container -->
+
+
+
+
+	</footer>
+
+
+
+
+</div><!-- /body-wrapper -->
+
+<div class="container">
+  <ul class="legal-links">
+    <li><a href="cookies-policy.html" target="_blank">Cookies Policy</a></li>
+  </ul>
+</div>
+
+
+<a class="scroll-to-anchor back-to-top" id="backToTop" title="Back to top" href="#top">
+  <img src="img/up-arrow.svg" alt="up arrow">
+</a>
+
+
+
+<!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience. ","dismiss":"Got it!","learnMore":"More info","link":"cookies-policy.html","theme":"dark-bottom","target":"_blank"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
+<!-- End Cookie Consent plugin -->
+
+
+
+</body>
+</html>
+
+<!-- /nonessential resources -->
+<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Roboto:400,400i,700,700i|Sanchez" rel="stylesheet">
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Loading complete
